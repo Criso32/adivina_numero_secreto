@@ -2,6 +2,7 @@ const generarNumeroAleatorio = () => {
     return Math.floor(Math.random() * 100) + 1;
     };
     const verificarAdivinanza = (numeroSecreto, numeroAdivinado) => {
+    numeroAdivinado = parseInt(numeroAdivinado, 10);
     if (numeroAdivinado === numeroSecreto) {
     console.log('¡Felicitaciones! ¡Adivinaste el número secreto!');
     } else if (numeroAdivinado > numeroSecreto) {
